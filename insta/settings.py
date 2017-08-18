@@ -81,6 +81,7 @@ DATABASES = {
     }
 }
 
+# Uncomment files below to use MySQL db
 # import os
 #
 # DATABASES = {
