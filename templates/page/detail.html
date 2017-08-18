@@ -1,0 +1,50 @@
+<!doctype html>
+{% load static %}
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Prime</title>
+    <link href="{% static "page/css/style.css" %}" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="main_container">
+    <div class="header">
+        <table>
+            <tr>
+                <td class="headerLeft"></td>
+                <td class="headerMiddle">
+                <div class="header_logo"></div>
+                </td>
+                <td class="headerRight"></td>
+            </tr>
+        </table>
+        <div class="clear"></div>
+    </div>
+
+    <div class="content">
+    	 <div class="simple_page">
+
+             <h2>Мы получили Ваши данные</h2>
+
+            <div class="subscribe">
+                <!--<form method="POST" class="post-form">{% csrf_token %}-->
+
+                <button onclick="location.href='https://www.primeconcept.co.uk/'" type="button"
+                        class="subscribe_btn">Продолжить на нашем сайте</button>
+                <!--</form>-->
+            </div>
+
+
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

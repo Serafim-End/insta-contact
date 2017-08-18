@@ -1,0 +1,67 @@
+<!doctype html>
+{% load static %}
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Prime</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="main_container">
+    <div class="header">
+        <table>
+            <tr>
+                <td class="headerLeft"></td>
+                <td class="headerMiddle">
+                <div class="header_logo"></div>
+                </td>
+                <td class="headerRight"></td>
+            </tr>
+        </table>
+        <div class="clear"></div>
+    </div>
+
+    <div class="content">
+    	 <div class="simple_page">
+            <h4>Заполните форму, и мы немедленно свяжемся с вами.</h4>
+            <br>
+            <div class="subscribe">
+                <form method="POST">{% csrf_token %}
+                    <div class="subscribe_title">Имя</div>
+                    <div class="subscribe_line">
+{#                        <input type="text" placeholder="">#}
+                        {{ form.first_name }}
+                    </div>
+                    <div class="subscribe_title">Фамилия</div>
+                    <div class="subscribe_line">
+{#                        <input type="text" placeholder="">#}
+                        {{ form.second_name }}
+                    </div>
+                    <div class="subscribe_title">Телефон</div>
+                    <div class="subscribe_line">
+                         {{ form.phone_number }}
+{#                        <input type="text" placeholder="">#}
+                    </div>
+                    <div class="subscribe_title">Email</div>
+                    <div class="subscribe_line">
+                        {{ form.email }}
+{#                        <input type="text" placeholder="">#}
+                    </div>
+                    <div class="subscribe_line"><p>Нажимая кнопку «Отправить», вы даете <br> <a href="#">согласие на обработку ваших персональных данных</a></p></div>
+                    <br>
+                    <div class="subscribe_line"><button type="submit" class="subscribe_btn">Отправить</button></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
