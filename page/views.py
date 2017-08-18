@@ -25,14 +25,13 @@ def page(request):
             o = PageModel.objects.last()
 
             parameters = {
-                'user_list': 'endnikita@gmail.com',
+                'user_list': 'news@primeconcept.co.uk',
                 'attachments': [],
                 'subject': 'Personal Data from Instagram'
             }
 
             info = """
-            Добрый день, коллеги! Поступила новая информация, 
-            пользователь instagram внес следующие персональные данные для обработки: 
+            Добрый день, коллеги! Поступила новая информация, пользователь instagram внес следующие персональные данные для обработки: 
             Имя: %s
             Фамилия: %s
             Телефон: %s

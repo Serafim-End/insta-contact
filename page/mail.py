@@ -72,5 +72,4 @@ def send_mail(**kwargs):
     #     max_attempts=100
     # )
     # print result
-
-    return result
+    return
