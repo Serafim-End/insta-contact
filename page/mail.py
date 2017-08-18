@@ -65,13 +65,12 @@ def send_mail(**kwargs):
 
     response = api.request('issue.send', issue)
 
-    result = api.track_wait(
-        response,
-        callback=track_process,
-        retry_interval=5,
-        max_attempts=100
-    )
-
-    print result
+    # result = api.track_wait(
+    #     response,
+    #     callback=track_process,
+    #     retry_interval=5,
+    #     max_attempts=100
+    # )
+    # print result
 
     return result
