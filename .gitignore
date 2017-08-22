@@ -10,7 +10,6 @@ db.*
 .arclint
 .arcconfig
 
-static/
 # IDE
 .idea/
 mongo-c-driver-1.6.2/
@@ -38,7 +37,6 @@ sdist/
 *.egg-info/
 .installed.cfg
 *.egg
-static/ext5-workspace/build/start-theme/start-theme.pkg
 
 
 # Installer logs

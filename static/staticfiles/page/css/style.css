@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+html {margin:0; padding:0;}
+body {margin:0; padding:0; background-color:#ffffff; min-width:320px; font-size:16px; font-family: Verdana;}
+
+a {outline:none;}
+img {border:none;}
+
+.main_container {margin:0; padding:0; width:100%;}
+.clear {clear:both; margin:0; padding:0; width:100%; height:0px;}
+input::-ms-clear {display:none;}
+
+/*---- Typography ----*/
+p {margin:0 0 20px 0; padding:0; font-family: Verdana; font-weight:normal; font-size:100%; color:#3f3f3f;}
+ul, ol {margin:0 0 20px 0; font-family: Verdana; list-style:none; font-weight:normal; font-size:150%; color:#3f3f3f; list-style-position:inside;}
+li {margin:0; padding:0 0 5px 0;}
+
+ol ol, ul ul {margin:10px 0 10px 40px;}
+ul li li, ol li li {font-size:45%;}
+
+h1, h2, h3, h4, h5, h6 {padding:0; font-family: Verdana; font-weight:normal; color:#000000;}
+h1 {margin: 0 0 20px 0; font-size: 225%;}
+h2 {margin: 0 0 20px 0; font-size: 200%;}
+h3 {margin: 0 0 20px 0; font-size:175%;}
+h4 {margin: 0 0 20px 0; font-size: 150%;}
+h5 {margin: 0 0 20px 0; font-size: 125%;}
+h6 {margin: 0 0 20px 0; font-size: 112.5%;}
+
+a:link, a:visited, a:active {margin:0; padding:0; font-family: Verdana; font-weight:normal; font-size:150%; color:#3f3f3f; text-decoration:underline;}
+a:hover {text-decoration:none;}
+
+/*--- HEADER ---*/
+.header {margin:0; padding:16px 0 16px 0; width:100%; background-color:#ffffff; box-sizing:border-box;}
+.header table {position:relative; z-index:97; margin:0; padding:0; width:100%; border-collapse:collapse;}
+.header table tr {margin:0; padding:0; width:100%;}
+.header table tr td {vertical-align:middle;}
+
+.headerLeft {margin:0; padding:0 0 0 20px; width:25%;}
+.headerMiddle {margin:0; padding:0; text-align:center;}
+.headerRight {margin:0; padding:0 20px 0 0; width:25%;}
+
+	.headerMiddle a:link, .headerMiddle a:visited, .headerMiddle a:hover, .headerMiddle a:active {display:block; margin:0; padding:0; text-decoration:none; text-align:center;}
+	.header_logo {display:inline-block; margin:0; padding:0; width:236px; height:88px; background:url(../img/prime_logo.png) no-repeat center top; background-size:100%;}
+/*--- end: HEADER ---*/
+
+/*--- CONTENT ---*/
+.content {margin:0 auto;; padding:0; width:500px; background-color:#ffffff; box-sizing: border-box;}
+.content_title {margin:0; padding:10px 10px; font-family: Verdana; font-weight:400; font-size:187.5%; color:#414042; text-align:left; overflow:hidden;}
+
+/*--- Simple page ---*/
+.simple_page {margin:0; padding:10px;}
+p.centered {text-align:center;}
+.simple_page p a {font-size:100%;}
+.simple_page p img {max-width:100%;}
+.download_link:link, .download_link:visited, .download_link:hover, .download_link:active {font-size:150%; color:#bd9a74;}
+
+/*----- subscribe ----*/
+.subscribe {margin:0 0 10px 0; padding:0;}
+.subscribe form {margin:0; padding:0;}
+	.subscribe_title {margin:0 0 10px 0; padding:0; font-family: Verdana; font-weight:normal; font-size:125%; line-height:normal; color:#939598; text-align:left;}
+	.subscribe_line {margin:0 0 20px 0; padding:0;}
+	.subscribe input[type=text], .subscribe .email {margin:0 0 4px 0; padding:3px 0; width:400px; font-family: Verdana; font-weight:normal; font-size:112.5%; color:#888888; text-align:left; border:none; border-bottom:2px solid #b7b7b7; outline:none; box-sizing:border-box; background-color:#ffffff;}
+	.subscribe input:focus {border-bottom:2px solid #b69c72;}
+	button.subscribe_btn {display:block; width:100%; margin:0; padding:10px 24px; font-family: Verdana; font-weight:400; font-size:125%; color:#ffffff; text-align:center; border:none; border-radius:3px; outline:none; background-color:#b59c71; cursor:pointer; box-sizing:border-box;}
+/*----- end: subscribe ----*/
+
+/*---- Adaptive ----*/
+@media screen and (max-width: 500px) {
+.content {width:auto;}
+.subscribe input[type=text], .subscribe .email {width:100%;}
+}
