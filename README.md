@@ -12,6 +12,9 @@ _**for production on MySQL db:**_
         python manage.py makemigrations
         python manage.py migrate
 
+4. collect static 
+
+        python manage.py collectstatic
 
 
 There are no information about how to deploy this project
